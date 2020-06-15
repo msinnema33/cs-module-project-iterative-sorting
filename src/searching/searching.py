@@ -14,7 +14,7 @@ def binary_search(arr, target):
     hi = len(arr) -1
     mid = 0
     while lo <= hi:
-        mid = (hi + lo) // 2  ## need double // to ensure integer
+        mid = (hi + lo) // 2  ## need double // to ensure integer and not fraction
         if arr[mid] == target:
             return mid
         elif target > arr[mid]: # take out lower(left side), set mid to lo
